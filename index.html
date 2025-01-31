@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- daisy Ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <!-- sora font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        .font-sora{
+            font-family: "Sora", serif;
+        } 
+    </style>
+    <!-- adlam display font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <style>
+        .font-adlam-display{
+            font-family: "ADLaM Display", serif;
+        }
+    </style>
+    <!-- colors -->
+      <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'bg-1': '#FFF9F4',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- font awesome cdn -->
+  <script src="https://kit.fontawesome.com/b6378e26be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header >
+        <!-- navbar -->
+        <div class="navbar bg-bg-1 md:px-36">
+            <div class="flex-1 space-x-3">
+            <img src="c1-assets/logo-header.png" alt="">
+              <h1 class="text-2xl">Browse<span class="text-[#FFDC26]">4</span>Pets</h1>
+            </div>
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 -ml-16 p-2 shadow ">
+                  <li><a>Log in</a></li>
+                  <li><a>Register</a></li>
+                  <li><a>notification</a></li>
+                  <li><a>Find a pet</a></li>
+                  <li><a>Breeds</a></li>
+                  <li><a>Contact us</a></li>
+                </ul>
+              </div>
+            <div class="navbar-center hidden lg:flex gap-32">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+              <div class="space-x-3">
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <button class=" rounded-lg px-8 py-2 border border-[#FFDC26]"><a class="">Login</a></button>
+                <button class="bg-[#FFDC26] rounded-lg px-8 py-2 border border-[#FFDC26]"><a class="">Register</a></button>
+              </div>
+            </div>
+          
+          </div>
+
+
+
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
