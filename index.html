@@ -33,6 +33,8 @@
           colors: {
             clifford: '#da373d',
             'bg-1': '#FFF9F4',
+            'bg-2': 'rgba(255, 220, 38, 0.5)',
+            'text-1': 'rgba(17, 17, 17, 0.7)'
           }
         }
       }
@@ -106,7 +108,7 @@
     </header>
     <main class="max-w-screen-xl mx-auto">
         <!-- browse by category section -->
-        <section class="md:mb-24">
+        <section class="md:mb-24 py-10">
             <h2 class="font-adlam-display text-4xl my-7">Browse By Categories</h2>
             <div class="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-6 md:gap-6">
                 <div class="bg-[#F9DF8A] rounded-xl flex flex-col items-center ">
@@ -168,7 +170,7 @@
             
         </section>
         <!-- Trending pet products section -->
-         <section class="bg-[#FFF9F4] md:py-24">
+         <section class="bg-[#FFF9F4] md:py-24 py-10">
             <h2 class="font-adlam-display text-4xl my-7">Trending Pet Products</h2>
             <div class="md:flex justify-between ">
                 <!-- big card -->
@@ -301,7 +303,9 @@
             
          </section>
          <!-- Everyday low price section -->
-          <section class="md:my-24">
+          <section class="my-24 ">
+            <h2 class="font-adlam-display text-4xl my-7">Everyday low price</h2>
+
             <div class="lg:flex gap-5">
                 <div class="pr-24 lg:flex lg:w-4/6 lg:items-center  bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] h-[480px] rounded-xl my-5 lg:my-0">
                     <div class="space-y-4 py-6 px-10 lg:py-0 ">
@@ -329,8 +333,8 @@
 
           </section>
           <!-- subsciber newsletter section -->
-           <section>
-            <div class="relative">
+           <section class="pb-56">
+            <div class="relative ">
                 <div class="bg-[#FFF9F4] rounded-2xl lg:flex lg:justify-center  lg:py-10 gap-32 absolute w-full">
                     <div><img src="c1-assets/cute-pet-mid.png" alt=""></div>
                     <div class="space-y-5 py-10 text-center">
@@ -346,8 +350,37 @@
           
 
     </main>
-    <footer>
+    <footer class="bg-bg-2 pt-[630px] md:pt-96 md:pb-24 pb-10">
+        <div class="md:flex justify-between max-w-screen-xl mx-auto">
+            <div class="md:w-1/3">
+                <div class=" flex items-center gap-2">
+                    <div><img src="c1-assets/logo-footer.png" alt=""></div>
+                    <h1 class="text-2xl">Browse Pets</h1>
+                </div>
+            
+            <p class="text-xl text-text1 pt-6">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+        </div>
+        <div class="pt-10 md:pt-0 md:w-1/3 md:pl-12">
+            <ul class="space-y-5 text-xl">
+                <li><a href="">Find a pet</a></li>
+                <li><a href="">Breeds</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
 
+        </div>
+        <div class="pt-14">  
+            <h3 class="font-medium pb-3">Follow Us</h3> 
+            <div class="space-x-5">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+
+
+
+            </div>
+        </div>
     </footer>
     
 </body>
