@@ -37,7 +37,17 @@
                         'bg-2': 'rgba(255, 220, 38, 0.5)',
                         'text-1': 'rgba(17, 17, 17, 0.7)',
                         'border-1': 'rgba(17, 17, 17, 0.1)'
-                    }
+                    },
+                    keyframes: {
+        'fade-up': {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '50%': { opacity: '1', transform: 'translateY(0)' },
+          '100%': { opacity: '0', transform: 'translateY(-10px)' },
+        },
+      },
+      animation: {
+        'fade-up-infinite': 'fade-up 2s ease-in-out infinite',
+      },
                 }
             }
         }
@@ -98,7 +108,7 @@
         <div
             class="max-w-screen-xl mx-auto bg-[url('c1-assets/cat-big.png')] bg-contain  pb-32 bg-bottom lg:pb-96 bg-no-repeat lg:bg-center lg:mb-24 px-4 lg:px-0">
             <div class=" space-y-8 max-w-xl">
-                <h1 class="text-5xl font-adlam-display leading-tight">Pamper Your Pet, Because They Deserve the Best
+                <h1 class="text-5xl font-adlam-display leading-tight animate-fade-up-infinite">Pamper Your Pet, Because They Deserve the Best
                 </h1>
                 <p class="text-text-1">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make
                     tails wag with joy!</p>
@@ -114,7 +124,7 @@
         <!-- browse by category section -->
         <section class="md:mb-24 py-10 px-4 lg:px-0">
             <div class="max-w-screen-xl mx-auto">
-                <h2 class="font-adlam-display text-4xl my-7">Browse By Categories</h2>
+                <h2 class="font-adlam-display text-4xl lg:text-5xl lg:pb-5 my-7">Browse By Categories</h2>
                 <div class="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-6 md:gap-6">
                     <div class="bg-[#F9DF8A] rounded-xl flex flex-col items-center ">
                         <div class="bg-white w-20 h-20 my-8 rounded-full relative">
@@ -176,9 +186,9 @@
 
         </section>
         <!-- Trending pet products section -->
-        <section class="bg-[#FFF9F4] md:py-24 py-10 px-4 lg:px-0">
+        <section class="bg-[#FFF9F4] md:py-24 py-10 px-4 lg:px-0 ">
             <div class="max-w-screen-xl mx-auto">
-                <h2 class="font-adlam-display text-4xl my-7">Trending Pet Products</h2>
+                <h2 class="font-adlam-display text-4xl lg:text-5xl my-7 lg:pb-5">Trending Pet Products</h2>
                 <div class="md:flex justify-between ">
                     <!-- big card -->
                     <div class="relative h-96 w-full md:w-1/3 bg-[#F9DF8A] rounded-xl p-5">
@@ -188,6 +198,7 @@
                         <img class="absolute top-16 left-32 lg:top-12 lg:left-52" src="c1-assets/cute-pet-small.png"
                             alt="">
                     </div>
+                    <br>
                     <!-- card collage -->
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-2 lg:gap-4 lg:ml-5">
                         <div>
@@ -358,10 +369,9 @@
 
         </section>
         <!-- our clients section(extra) -->
-
         <section class="my-24 px-4 lg:px-0">
             <div class="max-w-screen-xl mx-auto">
-                <h2 class="font-adlam-display text-4xl my-7">Our Clients</h2>
+                <h2 class="font-adlam-display text-4xl lg:text-5xl my-7 lg:pb-5">Our Clients</h2>
                 <div
                     class="bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] rounded-xl grid grid-cols-1 lg:grid-cols-2 px-5 md:px-16">
                     <!-- text -->
@@ -399,8 +409,8 @@
                                 <img src="c1-assets/client.png" alt="">
                             </div>
                             <div>
-                                <p class="text-text-1  mb-5">We are providing the best and suitable home insurance
-                                    services for the people who are interested to treatment</p>
+                                <p class="text-text-1  mb-5">We are providing the best and suitable 
+                                    services for the people who are interested in having pets.</p>
                                 <h1 class="font-adlam-display">Ilham Yuda</h1>
                                 <small class="font-adlam-display text-text-1 ">Businessman</small>
                             </div>
@@ -413,8 +423,8 @@
                                 <img src="c1-assets/client.png" alt="">
                             </div>
                             <div>
-                                <p class="text-text-1  mb-5">We are providing the best and suitable home insurance
-                                    services for the people who are interested to treatment</p>
+                                <p class="text-text-1  mb-5">We are providing the best and suitable 
+                                    services for the people who are interested in having pets.</p>
                                 <h1 class="font-adlam-display">Ilham Yuda</h1>
                                 <small class="font-adlam-display text-text-1 ">Businessman</small>
                             </div>
@@ -426,9 +436,9 @@
             </div>
         </section>
         <!-- Everyday low price section -->
-        <section class="my-24 px-4 lg:px-0">
+        <section class="mt-24 mb-64 md:my-24 px-4 lg:px-0">
             <div class="max-w-screen-xl mx-auto">
-                <h2 class="font-adlam-display text-4xl my-7">Everyday low price</h2>
+                <h2 class="font-adlam-display text-4xl lg:text-5xl my-7 lg:pb-5">Everyday low price</h2>
 
                 <div class="lg:flex gap-5">
                     <div
@@ -461,12 +471,12 @@
         <!-- subsciber newsletter section -->
         <section class="pb-56 px-4 lg:px-0">
             <div class="relative max-w-screen-xl mx-auto">
-                <div class="bg-[#FFF9F4] rounded-2xl lg:flex lg:justify-center  lg:py-10 gap-32 absolute w-full">
+                <div class="bg-[#FFF9F4] rounded-2xl lg:flex lg:justify-center  lg:py-10 gap-32 absolute w-full -top-32 md:top-0">
                     <div><img src="c1-assets/cute-pet-mid.png" alt=""></div>
                     <div class="space-y-5 py-10 text-center">
                         <h2 class="font-adlam-display text-4xl">Get Pawsome News!</h2>
                         <p class="text-xl">Exclusive training tips, ticks, product deals and more.</p>
-                        <div> <input class="my-5 py-3 px-5 w-full lg:w-5/6 rounded-lg" placeholder="Enter Email"
+                        <div> <input class="my-5 py-3 px-5 w-full lg:w-5/6 rounded-lg" placeholder="Enter Email..."
                                 type="text"></div>
                         <div><button class="bg-[#FFDC26] rounded-lg px-8 py-2 border border-[#FFDC26]"><a
                                     class="">Subscribe</a></button></div>
@@ -478,7 +488,7 @@
 
 
     </main>
-    <footer class="bg-bg-2 pt-[630px] md:pt-80 md:pb-24 pb-10 px-4 lg:px-0">
+    <footer class="bg-bg-2 pt-[480px] md:pt-80 md:pb-24 pb-10 px-4 lg:px-0">
         <div class="md:flex justify-between max-w-screen-xl mx-auto">
             <div class="md:w-1/3">
                 <div class=" flex items-center gap-2">
